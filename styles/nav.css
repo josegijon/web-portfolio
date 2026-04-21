@@ -1,0 +1,221 @@
+/* ── NAV ───────────────────────────────────── */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    padding: 20px 0 0 0;
+    background: linear-gradient(to bottom, rgba(11, 12, 15, 0.95) 0%, rgba(11, 12, 15, 0) 100%);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid transparent;
+    transition: border-color .3s;
+}
+
+nav.scrolled {
+    border-bottom-color: var(--border);
+}
+
+nav .inner {
+    max-width: 1100px;
+    margin: 0 auto 20px auto;
+    padding: 0 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    font-family: var(--mono);
+    font-size: 13px;
+    color: var(--accent);
+    letter-spacing: .05em;
+}
+
+.nav-links {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+}
+
+.nav-links a {
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--text-2);
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    transition: color .2s;
+    position: relative;
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0;
+    height: 1px;
+    background: var(--accent);
+    transition: width .25s;
+}
+
+.nav-links a:hover {
+    color: var(--text);
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+/* Active link */
+.nav-links a.active {
+    color: var(--text);
+    font-weight: bold;
+}
+
+.nav-links a.active::after {
+    width: 100%;
+}
+
+/* Hamburger button */
+.nav-hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 6px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    transition: all 0.4s ease;
+    z-index: 101;
+}
+
+.nav-hamburger span {
+    display: block;
+    background: var(--text-2);
+
+    width: 25px;
+    height: 2px;
+    border-radius: 10px;
+    transition: transform 0.5s cubic-bezier(0.6, -0.28, 0.735, 0.045),
+        background-color 0.3s ease;
+}
+
+.nav-hamburger.open span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.nav-hamburger.open span:nth-child(2) {
+    opacity: 0;
+    transform: translateX(10px);
+}
+
+.nav-hamburger.open span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Mobile menu */
+.nav-mobile {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+
+    padding: 64px;
+
+    background: var(--bg);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 32px;
+
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .3s ease;
+    z-index: 100;
+}
+
+.nav-mobile.open {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.nav-mobile-list {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 16px;
+    text-align: left;
+}
+
+.nav-mobile-list li {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+}
+
+.nav-mobile-list li a {
+    font-size: 36px;
+    font-weight: bold;
+    border: none;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.nav-mobile-list li:last-child a {
+    border-bottom: none;
+}
+
+.nav-mobile-list li a:hover,
+.nav-mobile-list li a.active {
+    color: var(--accent);
+    transform: translateY(-3px) scale(1.1);
+}
+
+.divider {
+    border: 1px solid var(--border);
+    margin: 24px 0;
+    width: 100%;
+}
+
+.rrss-list {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 24px;
+}
+
+.rrss-list li {
+    list-style-type: none;
+}
+
+.rrss-list li a {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.rrss-list li:hover {
+    color: var(--accent);
+    transform: translateY(-3px) scale(1.1);
+}
+
+/* ── RESPONSIVE ────────────────────────────── */
+
+@media (max-width: 900px) {
+    .nav-links {
+        display: none;
+    }
+
+    .nav-hamburger {
+        display: flex;
+    }
+
+    .nav-mobile {
+        display: flex;
+    }
+}

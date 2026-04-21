@@ -1,0 +1,46 @@
+/* ── FOOTER ────────────────────────────────── */
+footer {
+    width: 100%;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: transparent;
+}
+
+footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    padding: 60px 20px;
+}
+
+.footer-rrss {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-rrss a {
+    color: white;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+.footer-rrss a:hover {
+    color: var(--accent);
+    transform: translateY(-3px);
+}
+
+footer p {
+    font-size: 0.9rem;
+    opacity: 0.8;
+    color: white;
+    text-align: center;
+}
+
+footer span {
+    color: var(--accent);
+    font-weight: 600;
+}
+
+/* ── RESPONSIVE ────────────────────────────── */

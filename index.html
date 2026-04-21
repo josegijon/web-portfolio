@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>José Manuel Gijón — Frontend Developer</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <!-- ── NAV ── -->
+    <nav id="nav">
+        <div class="inner">
+            <div class="nav-logo">jmgijon.dev</div>
+
+            <ul class="nav-links">
+                <li><a href="#projects" data-section="projects">Proyectos</a></li>
+                <li><a href="#skills" data-section="skills">Skills</a></li>
+                <li><a href="#about" data-section="about">Sobre mí</a></li>
+                <li><a href="#contact" data-section="contact">Contacto</a></li>
+            </ul>
+
+            <button class="nav-hamburger" id="nav-hamburger" aria-label="Abrir menú" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+
+
+        <div class="nav-mobile" id="nav-mobile" aria-hidden="true">
+            <!-- Nav -->
+            <ul class="nav-mobile-list">
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#about">Sobre mí</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+
+            <!-- Divider -->
+            <div class="divider"></div>
+
+            <!-- RRSS -->
+            <ul class="rrss-list">
+                <li>
+                    <a href="https://www.linkedin.com/in/jose-manuel-gijón-almazán-bb804124b/" target="_blank"
+                        rel="noopener noreferrer" aria-label="LinkedIn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
+                            data-astro-cid-ahebihad="true" class="w-8 h-8">
+                            <g fill="currentColor">
+                                <path fill-rule="evenodd"
+                                    d="M12.51 8.796v1.697a3.74 3.74 0 0 1 3.288-1.684c3.455 0 4.202 2.16 4.202 4.97V19.5h-3.2v-5.072c0-1.21-.244-2.766-2.128-2.766c-1.827 0-2.139 1.317-2.139 2.676V19.5h-3.19V8.796h3.168ZM7.2 6.106a1.61 1.61 0 0 1-.988 1.483a1.595 1.595 0 0 1-1.743-.348A1.607 1.607 0 0 1 5.6 4.5a1.6 1.6 0 0 1 1.6 1.606"
+                                    clip-rule="evenodd"></path>
+                                <path d="M7.2 8.809H4V19.5h3.2z"></path>
+                            </g>
+                        </svg>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://github.com/josegijon/" target="_blank" rel="noopener noreferrer"
+                        aria-label="GitHub">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
+                            data-astro-cid-ahebihad="true" class="w-8 h-8">
+                            <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="1.5" color="currentColor">
+                                <path d="M10 20.568c-3.429 1.157-6.286 0-8-3.568"></path>
+                                <path
+                                    d="M10 22v-3.242c0-.598.184-1.118.48-1.588c.204-.322.064-.78-.303-.88C7.134 15.452 5 14.107 5 9.645c0-1.16.38-2.25 1.048-3.2c.166-.236.25-.354.27-.46c.02-.108-.015-.247-.085-.527c-.283-1.136-.264-2.343.16-3.43c0 0 .877-.287 2.874.96c.456.285.684.428.885.46s.469-.035 1.005-.169A9.5 9.5 0 0 1 13.5 3a9.6 9.6 0 0 1 2.343.28c.536.134.805.2 1.006.169c.2-.032.428-.175.884-.46c1.997-1.247 2.874-.96 2.874-.96c.424 1.087.443 2.294.16 3.43c-.07.28-.104.42-.084.526s.103.225.269.461c.668.95 1.048 2.04 1.048 3.2c0 4.462-2.134 5.807-5.177 6.643c-.367.101-.507.559-.303.88c.296.47.48.99.48 1.589V22">
+                                </path>
+                            </g>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ── HERO ── -->
+    <section id="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-tag">
+                    Frontend Developer · AI Engineer en proceso
+                </div>
+                <h1>
+                    Hola, soy <em>Jose</em>
+                </h1>
+                <p class="hero-desc">
+                    Desarrollador frontend especializado en <strong>React y TypeScript</strong>,
+                    con foco en arquitecturas escalables. En transición activa hacia
+                    <strong>AI Engineering</strong>.
+                </p>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn-primary">
+                        Contáctame
+                    </a>
+                    <a href="assets/cv/CV_Jose_Manuel_Gijon_Almazan_frontend.pdf" class="btn-ghost" download>
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4" />
+                            <polyline points="7,10 12,15 17,10" />
+                            <line x1="12" y1="15" x2="12" y2="3" />
+                        </svg>
+                        Descargar CV
+                    </a>
+                    <a href="https://www.linkedin.com/in/jose-manuel-gijón-almazán-bb804124b/" class="btn-ghost"
+                        target="_blank">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z" />
+                            <circle cx="4" cy="4" r="2" />
+                        </svg>
+                        LinkedIn
+                    </a>
+                    <a href="https://github.com/josegijon/" class="btn-ghost" target="_blank">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22" />
+                        </svg>
+                        GitHub
+                    </a>
+                </div>
+            </div>
+            <!-- <div class="order-1 lg:order-2 flex justify-center lg:justify-end relative">
+                <div
+                    class="relative w-72 h-72 md:w-[400px] md:h-[400px] grayscale hover:grayscale-0 transition-all duration-700">
+                    <div class="absolute -inset-4 bg-primary/20 rounded-xl blur-2xl"></div>
+                    <img alt="" class="relative w-full h-full object-cover rounded-xl border border-white/10"
+                        data-alt="" src='' />
+                </div>
+            </div> -->
+        </div>
+        <div class="scroll-hint">Scroll</div>
+    </section>
+
+    <!-- ── PROJECTS ── -->
+    <section id="projects">
+        <div class="container-section">
+            <div class="section-label reveal">
+                01 — Proyectos
+            </div>
+
+            <div class="projects-content">
+                <h2 class="reveal">
+                    Trabajo <em>real</em>
+                </h2>
+                <ul class="projects-list">
+                    <!-- Fraudlens -->
+                    <li class="project-card">
+                        <div class="project-image">
+                            <img src="assets/img/fraudlens-og.png" alt="fraudlens">
+                        </div>
+                        <div class="project-card-content">
+                            <div class="project-card-text">
+                                <ul>
+                                    <li>React</li>
+                                    <li>TypeScript</li>
+                                    <li>Vite</li>
+                                    <li>Python</li>
+                                    <li>FastAPI</li>
+                                    <li>scikit-learn</li>
+                                    <li>Pandas</li>
+                                </ul>
+                                <h3>FraudLens</h3>
+                                <p>
+                                    Dashboard interactivo full-stack para análisis y detección de fraude en
+                                    transacciones de tarjeta de crédito reales. Construido como proyecto de portfolio
+                                    para demostrar el ciclo completo de un AI Engineer: datos reales → análisis → modelo
+                                    ML → API → UI.
+                                </p>
+                            </div>
+                            <div class="project-card-btn">
+                                <a href="https://fraudlens-one.vercel.app" target="_blank" rel="noopener noreferrer"
+                                    class="btn-primary">
+                                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                        <circle cx="12" cy="12" r="3"></circle>
+                                    </svg>
+                                    Preview
+                                </a>
+                                <a href="https://github.com/josegijon/fraudlens" target="_blank"
+                                    rel="noopener noreferrer" class="btn-ghost">
+                                    <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                                        <path
+                                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22" />
+                                    </svg>
+                                    Code
+                                </a>
+                            </div>
+                        </div>
+
+                    </li>
+
+                    <!-- Forecash -->
+                    <li class="project-card">
+                        <div class="project-image">
+                            <img src="assets/img/forecash-og.png" alt="forecash">
+                        </div>
+                        <div class="project-card-content">
+                            <div class="project-card-text">
+                                <ul>
+                                    <li>React</li>
+                                    <li>TypeScript</li>
+                                    <li>Vite</li>
+                                    <li>Zustand</li>
+                                    <li>Zod</li>
+                                </ul>
+                                <h3>Forecash</h3>
+                                <p>
+                                    Herramienta web de planificación financiera personal que proyecta tu cashflow mes a
+                                    mes, detecta meses en negativo y permite simular escenarios "¿qué pasa si...?" para
+                                    tomar mejores decisiones económicas.
+                                </p>
+                            </div>
+                            <div class="project-card-btn">
+                                <a href="https://forecash-app.vercel.app" target="_blank" rel="noopener noreferrer"
+                                    class="btn-primary">
+                                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                        <circle cx="12" cy="12" r="3"></circle>
+                                    </svg>
+                                    Preview
+                                </a>
+                                <a href="https://github.com/josegijon/Forecash-v2" target="_blank"
+                                    rel="noopener noreferrer" class="btn-ghost">
+                                    <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                                        <path
+                                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22" />
+                                    </svg>
+                                    Code
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── SKILLS ── -->
+    <section id="skills">
+        <div class="container-section">
+            <div class="section-label reveal">
+                02 — Skills
+            </div>
+
+            <div class="skills-content">
+                <h2 class="reveal">
+                    <em>Stack</em> Tecnológico
+                </h2>
+                <div class="skills-grid">
+                    <div class="skill-group reveal reveal-delay-1">
+                        <h3>Frontend Architecture</h3>
+                        <p class="group-description">
+                            Enfoque en sistemas escalables, tipado estricto y lógica desacoplada de la UI.
+                        </p>
+                        <ul class="skills-list">
+                            <li class="skill-item core">
+                                React 19 & TypeScript
+                            </li>
+                            <li class="skill-item core">
+                                Arquitecturas Modulares
+                            </li>
+                            <li class="skill-item">
+                                Gestión de Estado & Persistencia (Zustand)
+                            </li>
+                            <li class="skill-item">
+                                Validación de Esquemas & Datos (Zod)
+                            </li>
+                            <li class="skill-item">
+                                Design Systems & Modern CSS (Tailwind 4 / SASS)
+                            </li>
+                            <li class="skill-item">
+                                Figma-to-Code (Pixel Perfect Workflow)
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-group reveal reveal-delay-2">
+                        <h3>AI & Machine Learning</h3>
+                        <p class="group-description">
+                            Creación, entrenamiento e integración de modelos predictivos y lógica de datos en
+                            aplicaciones funcionales.
+                        </p>
+                        <ul class="skills-list">
+                            <li class="skill-item core">
+                                Python & Scikit-learn (ML Lifecycle)
+                            </li>
+                            <li class="skill-item core">
+                                Model Serving con FastAPI
+                            </li>
+                            <li class="skill-item">
+                                Análisis y Procesamiento de Datos (Pandas)
+                            </li>
+                            <li class="skill-item">
+                                Lógica de Detección de Fraude (Entrenamiento/Validación)
+                            </li>
+                            <li class="skill-item">
+                                Orquestación de LLMs & Prompting (En formación)
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-group reveal reveal-delay-3">
+                        <h3>Ecosistema & Workflow</h3>
+                        <p class="group-description">
+                            Experiencia en entornos de producción de agencia, garantizando entregas eficientes y
+                            autonomía del cliente.
+                        </p>
+                        <ul class="skills-list">
+                            <li class="skill-item core">
+                                Control de Versiones (Git & GitHub Flow)
+                            </li>
+                            <li class="skill-item core">
+                                Desarrollo CMS Autogestionable (WP + ACF)
+                            </li>
+                            <li class="skill-item">
+                                CI/CD & Deployment (Vercel / Vite)
+                            </li>
+                            <li class="skill-item">
+                                Scripting & Automatización (Bash / Python)
+                            </li>
+                            <li class="skill-item">
+                                Consumo de APIs REST & Node.js
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── ABOUT ── -->
+    <section id="about">
+        <div class="container-section">
+            <div class="section-label">03 — Sobre mí</div>
+            <div class="about-content">
+                <h2>
+                    Frontend Developer con mentalidad de<br><em>Producto</em>
+                </h2>
+                <div class="about-text">
+                    <p>
+                        Construyo sistemas mantenibles, no solo interfaces. Mi enfoque principal es
+                        <strong>React y TypeScript</strong>, pero donde busco aportar valor es en la arquitectura,
+                        cómo
+                        se organiza el código, cómo escala, cómo se mantiene.
+                    </p>
+                    <p>
+                        Un ejemeplo es <strong>Forecash</strong>, donde implementé un <strong>monorepo</strong> con
+                        el
+                        dominio totalmente desacoplado del frontend.
+                    </p>
+                    <p>
+                        Actualmente, estoy expandiendo mi stack hacia el <strong>AI Engineering</strong>:
+                        integración de
+                        LLMs, lógica de orquestación, productos inteligentes que resuelvan problemas reales de forma
+                        eficiente.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── CONTACT ── -->
+    <section id="contact">
+        <div class="container-section">
+            <div class="section-label reveal">04 — Contacto</div>
+
+            <div class="contact-layout">
+
+                <div class="contact-copy reveal">
+                    <h2>¿Hablamos?</h2>
+                    <p>
+                        Busco una oportunidad para aportar valor y seguir creciendo profesionalmente.
+                        Si buscas a alguien comprometido para fortalecer tu equipo o proyecto, hablemos.
+                    </p>
+
+                    <div class="contact-meta">
+                        <a href="assets/cv/CV_Jose_Manuel_Gijon_Almazan_frontend.pdf" class="btn-ghost" download>
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4" />
+                                <polyline points="7,10 12,15 17,10" />
+                                <line x1="12" y1="15" x2="12" y2="3" />
+                            </svg>
+                            Descargar CV
+                        </a>
+                    </div>
+                </div>
+
+                <form class="contact-form reveal reveal-delay-1" action="https://formspree.io/f/xdaydrrl" method="POST"
+                    id="contact-form">
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label for="name">Nombre</label>
+                            <input type="text" id="name" name="name" placeholder="Tu nombre" required
+                                autocomplete="name" />
+                        </div>
+                        <div class="form-field">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="tu@email.com" required
+                                autocomplete="email" />
+                        </div>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="message">Mensaje</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Cuéntame en qué puedo ayudarte..."
+                            required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-submit" id="submit-btn">
+                        <span class="btn-submit-text">Enviar mensaje</span>
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="22" y1="2" x2="11" y2="13" />
+                            <polygon points="22 2 15 22 11 13 2 9 22 2" />
+                        </svg>
+                    </button>
+
+                    <p class="form-success" id="form-success" aria-live="polite">
+                        ✓ Mensaje enviado. Te respondo pronto.
+                    </p>
+                </form>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ── FOOTER ── -->
+    <footer>
+        <div class="container">
+            <div class="footer-rrss">
+                <a href="https://www.linkedin.com/in/jose-manuel-gijón-almazán-bb804124b/" target="_blank"
+                    rel="noopener noreferrer" aria-label="LinkedIn">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0">
+                        <path fill="currentColor"
+                            d="M20 3H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1M8.339 18.337H5.667v-8.59h2.672zM7.003 8.574a1.548 1.548 0 1 1 0-3.096a1.548 1.548 0 0 1 0 3.096m11.335 9.763h-2.669V14.16c0-.996-.018-2.277-1.388-2.277c-1.39 0-1.601 1.086-1.601 2.207v4.248h-2.667v-8.59h2.56v1.174h.037c.355-.675 1.227-1.387 2.524-1.387c2.704 0 3.203 1.778 3.203 4.092v4.71z">
+                        </path>
+                    </svg>
+                </a>
+
+                <a href="https://github.com/josegijon/" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0">
+                        <path fill="currentColor" fill-rule="evenodd"
+                            d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974c0 4.406 2.857 8.145 6.821 9.465c.499.09.679-.217.679-.481c0-.237-.008-.865-.011-1.696c-2.775.602-3.361-1.338-3.361-1.338c-.452-1.152-1.107-1.459-1.107-1.459c-.905-.619.069-.605.069-.605c1.002.07 1.527 1.028 1.527 1.028c.89 1.524 2.336 1.084 2.902.829c.091-.645.351-1.085.635-1.334c-2.214-.251-4.542-1.107-4.542-4.93c0-1.087.389-1.979 1.024-2.675c-.101-.253-.446-1.268.099-2.64c0 0 .837-.269 2.742 1.021a9.6 9.6 0 0 1 2.496-.336a9.6 9.6 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021c.545 1.372.203 2.387.099 2.64c.64.696 1.024 1.587 1.024 2.675c0 3.833-2.33 4.675-4.552 4.922c.355.308.675.916.675 1.846c0 1.334-.012 2.41-.012 2.737c0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974C22 6.465 17.535 2 12.026 2"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </a>
+            </div>
+            <p>
+                © 2026 <span>José Manuel Gijón</span> · Hecho con ♥️
+            </p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/nav.js" defer></script>
+    <script src="scripts/contact_form.js" defer></script>
+
+</body>
+
+</html>

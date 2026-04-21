@@ -1,0 +1,60 @@
+/* ── ABOUT ─────────────────────────────────── */
+#about {
+    background-color: var(--surface-container-low);
+}
+
+h2 em {
+    font-style: italic;
+}
+
+.about-content {
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.about-content h2 {
+    flex: 1;
+}
+
+.about-text {
+    flex: 1.5;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.about-text p {
+    max-width: 60ch;
+    color: var(--text-2);
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.about-text p strong {
+    color: var(--text);
+    font-weight: 500;
+}
+
+/* ── RESPONSIVE ────────────────────────────── */
+
+@media (max-width: 900px) {
+    #about .grid {
+        grid-template-columns: 1fr;
+        gap: 48px;
+    }
+}
+
+@media (max-width: 600px) {
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+    }
+
+    .about-text {
+        gap: 10px;
+    }
+}
