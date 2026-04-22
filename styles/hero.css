@@ -185,4 +185,8 @@ h2 em {
     .hero-cta {
         flex-direction: column;
     }
+
+    .scroll-hint {
+        display: none;
+    }
 }
