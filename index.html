@@ -7,10 +7,10 @@
     <title>José Manuel Gijón — Frontend Developer</title>
 
     <!-- Favicon -->
-    <link rel="icon" href="assets/img/favicon.ico" />
-    <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png" />
-    <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png" />
+    <link rel="icon" href="assets/img/favicon/favicon.ico" />
+    <link rel="icon" type="image/svg+xml" href="assets/img/favicon/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png" />
+    <link rel="apple-touch-icon" href="assets/img/favicon/apple-touch-icon.png" />
 
     <!-- Open Graph -->
     <meta property="og:title" content="Jose Manuel Gijón — Frontend Developer" />
@@ -105,21 +105,22 @@
         <div class="container">
             <div class="hero-content">
                 <div class="hero-tag">
-                    Frontend Developer · AI Engineer en proceso
+                    Software Developer → AI Engineering
                 </div>
                 <h1>
                     Hola, soy <em>Jose</em>
                 </h1>
                 <p class="hero-desc">
-                    Desarrollador frontend especializado en <strong>React y TypeScript</strong>,
-                    con foco en arquitecturas escalables. En transición activa hacia
-                    <strong>AI Engineering</strong>.
+                    Desarrollador con experiencia en <strong>React y TypeScript</strong>
+                    y <strong>Python</strong>, en transición activa hacia
+                    <strong>AI Engineering</strong>. Construyo desde interfaces
+                    hasta agentes de IA desde cero.
                 </p>
                 <div class="hero-cta">
                     <a href="#contact" class="btn-primary">
                         Contáctame
                     </a>
-                    <a href="assets/cv/CV_Jose_Manuel_Gijon_Almazan_frontend.pdf" class="btn-ghost" download>
+                    <a href="assets/cv/CV_Jose_Manuel_Gijón_Almazán_.pdf" class="btn-ghost" download>
                         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4" />
@@ -170,10 +171,47 @@
                     Trabajo <em>real</em>
                 </h2>
                 <ul class="projects-list">
+                    <!-- Stem Agent -->
+                    <li class="project-card">
+                        <div class="project-image">
+                            <img src="assets/img/projects/stem-agent-og.png" alt="fraudlens">
+                        </div>
+                        <div class="project-card-content">
+                            <div class="project-card-text">
+                                <ul>
+                                    <li>Python</li>
+                                    <li>OpenAI API</li>
+                                    <li>Pydantic</li>
+                                    <li>ReAct Pattern</li>
+                                    <li>LLMs</li>
+                                </ul>
+                                <h3>Stem Agent</h3>
+                                <p>
+                                    Agente mínimo que recibe el nombre de un dominio, observa cómo
+                                    trabajan los expertos en él, y se construye a sí mismo como agente
+                                    especializado. El system prompt, las herramientas y los criterios
+                                    de dominio son generados por el propio stem — sin frameworks de
+                                    agentes, implementado desde cero sobre la API de OpenAI.
+                                </p>
+                            </div>
+                            <div class="project-card-btn">
+                                <a href="https://github.com/josegijon/stem-agent" target="_blank"
+                                    rel="noopener noreferrer" class="btn-ghost">
+                                    <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                                        <path
+                                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22" />
+                                    </svg>
+                                    Code
+                                </a>
+                            </div>
+                        </div>
+
+                    </li>
+
                     <!-- Fraudlens -->
                     <li class="project-card">
                         <div class="project-image">
-                            <img src="assets/img/fraudlens-og.png" alt="fraudlens">
+                            <img src="assets/img/projects/fraudlens-og.png" alt="fraudlens">
                         </div>
                         <div class="project-card-content">
                             <div class="project-card-text">
@@ -220,7 +258,7 @@
                     <!-- Forecash -->
                     <li class="project-card">
                         <div class="project-image">
-                            <img src="assets/img/forecash-og.png" alt="forecash">
+                            <img src="assets/img/projects/forecash-og.png" alt="forecash">
                         </div>
                         <div class="project-card-content">
                             <div class="project-card-text">
@@ -304,26 +342,29 @@
                     </div>
 
                     <div class="skill-group reveal reveal-delay-2">
-                        <h3>AI & Machine Learning</h3>
+                        <h3>AI Engineering</h3>
                         <p class="group-description">
-                            Creación, entrenamiento e integración de modelos predictivos y lógica de datos en
-                            aplicaciones funcionales.
+                            Diseño e implementación de agentes de IA, pipelines de LLMs
+                            y modelos predictivos integrados en aplicaciones funcionales.
                         </p>
                         <ul class="skills-list">
                             <li class="skill-item core">
-                                Python & Scikit-learn (ML Lifecycle)
+                                AI Agents & ReAct Pattern (OpenAI API)
                             </li>
                             <li class="skill-item core">
+                                Python & Pydantic (Structured Outputs)
+                            </li>
+                            <li class="skill-item core">
+                                ML Lifecycle con scikit-learn
+                            </li>
+                            <li class="skill-item">
                                 Model Serving con FastAPI
                             </li>
                             <li class="skill-item">
                                 Análisis y Procesamiento de Datos (Pandas)
                             </li>
                             <li class="skill-item">
-                                Lógica de Detección de Fraude (Entrenamiento/Validación)
-                            </li>
-                            <li class="skill-item">
-                                Orquestación de LLMs & Prompting (En formación)
+                                Prompt Engineering & Domain Classification
                             </li>
                         </ul>
                     </div>
@@ -363,25 +404,24 @@
             <div class="section-label">03 — Sobre mí</div>
             <div class="about-content">
                 <h2>
-                    Frontend Developer con mentalidad de<br><em>Producto</em>
+                    Software Developer en transición hacia<br><em>AI Engineering</em>
                 </h2>
                 <div class="about-text">
                     <p>
                         Construyo sistemas mantenibles, no solo interfaces. Mi enfoque principal es
-                        <strong>React y TypeScript</strong>, pero donde busco aportar valor es en la arquitectura,
-                        cómo
-                        se organiza el código, cómo escala, cómo se mantiene.
+                        <strong>React y TypeScript</strong>, pero donde busco aportar valor es en la arquitectura:
+                        cómo se organiza el código, cómo escala, cómo se mantiene.
                     </p>
                     <p>
-                        Un ejemeplo es <strong>Forecash</strong>, donde implementé un <strong>monorepo</strong> con
-                        el
-                        dominio totalmente desacoplado del frontend.
+                        Recientemente he construido un <strong>Stem Agent</strong>: un agente que recibe el nombre
+                        de un dominio, observa cómo trabajan los expertos en él, y se construye a sí mismo como
+                        agente especializado. Implementado desde cero sobre la API de OpenAI, sin frameworks de
+                        agentes.
                     </p>
                     <p>
-                        Actualmente, estoy expandiendo mi stack hacia el <strong>AI Engineering</strong>:
-                        integración de
-                        LLMs, lógica de orquestación, productos inteligentes que resuelvan problemas reales de forma
-                        eficiente.
+                        Ese proyecto resume bien hacia dónde voy: <strong>AI Engineering</strong> aplicado,
+                        con criterio de arquitectura y sin depender de abstracciones que oculten lo que
+                        realmente está pasando.
                     </p>
                 </div>
             </div>
