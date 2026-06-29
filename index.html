@@ -36,7 +36,9 @@
     <!-- ── NAV ── -->
     <nav id="nav">
         <div class="inner">
-            <div class="nav-logo">jmgijon.dev</div>
+            <div class="nav-logo">
+                <img src="/assets/img/projects/logo.png" alt="">
+            </div>
 
             <ul class="nav-links">
                 <li><a href="#projects" data-section="projects">Proyectos</a></li>
@@ -106,22 +108,22 @@
         <div class="container">
             <div class="hero-content">
                 <div class="hero-tag">
-                    Software Developer → AI Engineering
+                    Software Developer · React & TypeScript
                 </div>
                 <h1>
                     Hola, soy <em>Jose</em>
                 </h1>
                 <p class="hero-desc">
-                    Desarrollador con experiencia en <strong>React y TypeScript</strong>
-                    y <strong>Python</strong>, en transición activa hacia
-                    <strong>AI Engineering</strong>. Construyo desde interfaces
-                    hasta agentes de IA desde cero.
+                    Desarrollador <strong>React y TypeScript</strong>, con
+                    <strong>Python</strong> como stack de apoyo. Construyo productos
+                    completos, desde la interfaz hasta la lógica de negocio, y aplico
+                    IA cuando aporta valor real.
                 </p>
                 <div class="hero-cta">
                     <a href="#contact" class="btn-primary">
                         Contáctame
                     </a>
-                    <a href="assets/cv/CV_Jose_Manuel_Gijón_Almazán_.pdf" class="btn-ghost" download>
+                    <a href="assets/cv/CV_Jose_Manuel_Gijon_Almazan.pdf" class="btn-ghost" download>
                         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4" />
@@ -148,14 +150,6 @@
                     </a>
                 </div>
             </div>
-            <!-- <div class="order-1 lg:order-2 flex justify-center lg:justify-end relative">
-                <div
-                    class="relative w-72 h-72 md:w-[400px] md:h-[400px] grayscale hover:grayscale-0 transition-all duration-700">
-                    <div class="absolute -inset-4 bg-primary/20 rounded-xl blur-2xl"></div>
-                    <img alt="" class="relative w-full h-full object-cover rounded-xl border border-white/10"
-                        data-alt="" src='' />
-                </div>
-            </div> -->
         </div>
         <div class="scroll-hint">Scroll</div>
     </section>
@@ -172,31 +166,39 @@
                     Trabajo <em>real</em>
                 </h2>
                 <ul class="projects-list">
-                    <!-- Stem Agent -->
+                    <!-- Forecash -->
                     <li class="project-card">
                         <div class="project-image">
-                            <img src="assets/img/projects/stem-agent-og.png" alt="fraudlens">
+                            <img src="assets/img/projects/forecash-og.png" alt="forecash">
                         </div>
                         <div class="project-card-content">
                             <div class="project-card-text">
                                 <ul>
-                                    <li>Python</li>
-                                    <li>OpenAI API</li>
-                                    <li>Pydantic</li>
-                                    <li>ReAct Pattern</li>
-                                    <li>LLMs</li>
+                                    <li>React</li>
+                                    <li>TypeScript</li>
+                                    <li>Vite</li>
+                                    <li>Zustand</li>
+                                    <li>Zod</li>
                                 </ul>
-                                <h3>Stem Agent</h3>
+                                <h3>Forecash</h3>
                                 <p>
-                                    Agente mínimo que recibe el nombre de un dominio, observa cómo
-                                    trabajan los expertos en él, y se construye a sí mismo como agente
-                                    especializado. El system prompt, las herramientas y los criterios
-                                    de dominio son generados por el propio stem — sin frameworks de
-                                    agentes, implementado desde cero sobre la API de OpenAI.
+                                    Herramienta web de planificación financiera personal que proyecta tu cashflow
+                                    mes a mes, detecta meses en negativo y permite simular escenarios "¿qué pasa
+                                    si...?" para tomar mejores decisiones económicas. Arquitectura monorepo con el
+                                    dominio de negocio desacoplado del frontend.
                                 </p>
                             </div>
                             <div class="project-card-btn">
-                                <a href="https://github.com/josegijon/stem-agent" target="_blank"
+                                <a href="https://forecash-app.vercel.app" target="_blank" rel="noopener noreferrer"
+                                    class="btn-primary">
+                                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                        <circle cx="12" cy="12" r="3"></circle>
+                                    </svg>
+                                    Preview
+                                </a>
+                                <a href="https://github.com/josegijon/Forecash-v2" target="_blank"
                                     rel="noopener noreferrer" class="btn-ghost">
                                     <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
                                         <path
@@ -206,10 +208,9 @@
                                 </a>
                             </div>
                         </div>
-
                     </li>
 
-                    <!-- Fraudlens -->
+                    <!-- FraudLens -->
                     <li class="project-card">
                         <div class="project-image">
                             <img src="assets/img/projects/fraudlens-og.png" alt="fraudlens">
@@ -227,10 +228,10 @@
                                 </ul>
                                 <h3>FraudLens</h3>
                                 <p>
-                                    Dashboard interactivo full-stack para análisis y detección de fraude en
-                                    transacciones de tarjeta de crédito reales. Construido como proyecto de portfolio
-                                    para demostrar el ciclo completo de un AI Engineer: datos reales → análisis → modelo
-                                    ML → API → UI.
+                                    Dashboard full-stack para análisis y detección de fraude en transacciones de
+                                    tarjeta de crédito, con un modelo RandomForest entrenado sobre un dataset público.
+                                    Mi primer proyecto de contacto real con un pipeline de ML: desde el dato hasta la
+                                    API y la UI con métricas visibles.
                                 </p>
                             </div>
                             <div class="project-card-btn">
@@ -253,41 +254,68 @@
                                 </a>
                             </div>
                         </div>
-
                     </li>
 
-                    <!-- Forecash -->
+                    <!-- DocBot -->
                     <li class="project-card">
                         <div class="project-image">
-                            <img src="assets/img/projects/forecash-og.png" alt="forecash">
+                            <img src="assets/img/projects/docbot-og.png" alt="docbot">
                         </div>
                         <div class="project-card-content">
                             <div class="project-card-text">
                                 <ul>
                                     <li>React</li>
                                     <li>TypeScript</li>
-                                    <li>Vite</li>
-                                    <li>Zustand</li>
-                                    <li>Zod</li>
+                                    <li>Tailwind 4</li>
+                                    <li>Python</li>
+                                    <li>FastAPI</li>
+                                    <li>GroqAPI</li>
+                                    <li>RAG</li>
                                 </ul>
-                                <h3>Forecash</h3>
+                                <h3>DocBot <span style="opacity:.6; font-size:0.7em;">— en desarrollo</span></h3>
                                 <p>
-                                    Herramienta web de planificación financiera personal que proyecta tu cashflow mes a
-                                    mes, detecta meses en negativo y permite simular escenarios "¿qué pasa si...?" para
-                                    tomar mejores decisiones económicas.
+                                    App web para compartir un PDF y conversar sobre su contenido. Pipeline propio de
+                                    RAG: chunking del documento, generación de embeddings y recuperación de contexto
+                                    antes de pasar la consulta al LLM vía GroqAPI. Aún sin demo pública desplegada.
                                 </p>
                             </div>
                             <div class="project-card-btn">
-                                <a href="https://forecash-app.vercel.app" target="_blank" rel="noopener noreferrer"
-                                    class="btn-primary">
-                                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                                        <circle cx="12" cy="12" r="3"></circle>
+                                <a href="https://github.com/josegijon/docbot" target="_blank" rel="noopener noreferrer"
+                                    class="btn-ghost">
+                                    <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                                        <path
+                                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22" />
                                     </svg>
-                                    Preview
+                                    Code
                                 </a>
-                                <a href="https://github.com/josegijon/Forecash-v2" target="_blank"
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- Stem Agent -->
+                    <li class="project-card">
+                        <div class="project-image">
+                            <img src="assets/img/projects/stem-agent-og.png" alt="stem agent">
+                        </div>
+                        <div class="project-card-content">
+                            <div class="project-card-text">
+                                <ul>
+                                    <li>Python</li>
+                                    <li>OpenAI API</li>
+                                    <li>Pydantic</li>
+                                    <li>ReAct Pattern</li>
+                                </ul>
+                                <h3>Stem Agent <span style="opacity:.6; font-size:0.7em;">— ejercicio técnico</span>
+                                </h3>
+                                <p>
+                                    Agente de terminal construido en formato sprint para una prueba técnica:
+                                    a partir del nombre de un dominio, genera su propio system prompt y herramientas
+                                    para actuar como agente especializado, implementado desde cero sobre la API de
+                                    OpenAI sin frameworks de agentes.
+                                </p>
+                            </div>
+                            <div class="project-card-btn">
+                                <a href="https://github.com/josegijon/stem-agent" target="_blank"
                                     rel="noopener noreferrer" class="btn-ghost">
                                     <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
                                         <path
@@ -325,7 +353,7 @@
                                 React 19 & TypeScript
                             </li>
                             <li class="skill-item core">
-                                Arquitecturas Modulares
+                                Arquitecturas Modulares (Monorepo)
                             </li>
                             <li class="skill-item">
                                 Gestión de Estado & Persistencia (Zustand)
@@ -343,29 +371,26 @@
                     </div>
 
                     <div class="skill-group reveal reveal-delay-2">
-                        <h3>AI Engineering</h3>
+                        <h3>IA aplicada a producto</h3>
                         <p class="group-description">
-                            Diseño e implementación de agentes de IA, pipelines de LLMs
-                            y modelos predictivos integrados en aplicaciones funcionales.
+                            Integración de modelos y LLMs en aplicaciones funcionales, con foco en
+                            entender el sistema completo, no solo en consumir una API.
                         </p>
                         <ul class="skills-list">
-                            <li class="skill-item core">
-                                AI Agents & ReAct Pattern (OpenAI API)
-                            </li>
-                            <li class="skill-item core">
-                                Python & Pydantic (Structured Outputs)
-                            </li>
-                            <li class="skill-item core">
-                                ML Lifecycle con scikit-learn
+                            <li class="skill-item">
+                                Python & FastAPI (Model Serving)
                             </li>
                             <li class="skill-item">
-                                Model Serving con FastAPI
+                                RAG: Chunking, Embeddings, GroqAPI
+                            </li>
+                            <li class="skill-item">
+                                Modelos predictivos con scikit-learn (RandomForest)
                             </li>
                             <li class="skill-item">
                                 Análisis y Procesamiento de Datos (Pandas)
                             </li>
                             <li class="skill-item">
-                                Prompt Engineering & Domain Classification
+                                Agentes con OpenAI API & Patrón ReAct
                             </li>
                         </ul>
                     </div>
@@ -390,7 +415,7 @@
                                 Scripting & Automatización (Bash / Python)
                             </li>
                             <li class="skill-item">
-                                Consumo de APIs REST & Node.js
+                                Consumo de APIs REST
                             </li>
                         </ul>
                     </div>
@@ -405,24 +430,23 @@
             <div class="section-label">03 — Sobre mí</div>
             <div class="about-content">
                 <h2>
-                    Software Developer en transición hacia<br><em>AI Engineering</em>
+                    Software Developer<br><em>centrado en producto real</em>
                 </h2>
                 <div class="about-text">
                     <p>
                         Construyo sistemas mantenibles, no solo interfaces. Mi enfoque principal es
-                        <strong>React y TypeScript</strong>, pero donde busco aportar valor es en la arquitectura:
-                        cómo se organiza el código, cómo escala, cómo se mantiene.
+                        <strong>React y TypeScript</strong>, y donde más me gusta aportar valor es en la
+                        arquitectura: cómo se organiza el código, cómo escala, cómo se mantiene.
                     </p>
                     <p>
-                        Recientemente he construido un <strong>Stem Agent</strong>: un agente que recibe el nombre
-                        de un dominio, observa cómo trabajan los expertos en él, y se construye a sí mismo como
-                        agente especializado. Implementado desde cero sobre la API de OpenAI, sin frameworks de
-                        agentes.
+                        Eso se ve en <strong>Forecash</strong>, mi proyecto más sólido: una app de planificación
+                        financiera con arquitectura monorepo y el dominio de negocio desacoplado del frontend.
                     </p>
                     <p>
-                        Ese proyecto resume bien hacia dónde voy: <strong>AI Engineering</strong> aplicado,
-                        con criterio de arquitectura y sin depender de abstracciones que oculten lo que
-                        realmente está pasando.
+                        En paralelo, aplico IA donde tiene sentido: he construido un dashboard de detección de
+                        fraude con un modelo propio (<strong>FraudLens</strong>) y estoy desarrollando
+                        <strong>DocBot</strong>, una app de RAG sobre documentos. Me interesa la IA aplicada a
+                        producto, con criterio, sin vender más de lo que puedo defender en una conversación técnica.
                     </p>
                 </div>
             </div>
