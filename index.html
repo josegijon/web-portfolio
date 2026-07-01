@@ -272,14 +272,26 @@
                                     <li>GroqAPI</li>
                                     <li>RAG</li>
                                 </ul>
-                                <h3>DocBot <span style="opacity:.6; font-size:0.7em;">— en desarrollo</span></h3>
+                                <h3>DocBot</h3>
                                 <p>
-                                    App web para compartir un PDF y conversar sobre su contenido. Pipeline propio de
-                                    RAG: chunking del documento, generación de embeddings y recuperación de contexto
-                                    antes de pasar la consulta al LLM vía GroqAPI. Aún sin demo pública desplegada.
+                                    App web para subir un PDF y conversar con su contenido, con respuestas
+                                    fundamentadas y citas de página. Pipeline propio de RAG: chunking semántico,
+                                    embeddings locales, recuperación por similitud y reranking con cross-encoder
+                                    antes de generar la respuesta vía Groq API. Backend en FastAPI y frontend en
+                                    React/TypeScript, con especial atención a accesibilidad y rendimiento percibido
+                                    (streaming, estados de carga).
                                 </p>
                             </div>
                             <div class="project-card-btn">
+                                <a href="https://docbot-app.vercel.app" target="_blank" rel="noopener noreferrer"
+                                    class="btn-primary">
+                                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                        <circle cx="12" cy="12" r="3"></circle>
+                                    </svg>
+                                    Preview
+                                </a>
                                 <a href="https://github.com/josegijon/docbot" target="_blank" rel="noopener noreferrer"
                                     class="btn-ghost">
                                     <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
